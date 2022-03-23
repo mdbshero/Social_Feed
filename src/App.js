@@ -11,11 +11,16 @@ function App() {
     { name: "Matthew Bshero", comment: "Test post 2" },
   ]);
 
+  function addNewPost(post){
+    let tempPosts = [...posts, post];
+    setPosts(tempPosts);
+  }
+
   return (
     <div>
       <NavBar />
       <main>
-      <CreatePost />
+      <CreatePost addNewPostProp={addNewPost}/>
       <DisplayPosts post={posts}/>
       </main>
     </div>

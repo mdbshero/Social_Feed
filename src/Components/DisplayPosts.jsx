@@ -11,9 +11,9 @@ const DisplayPosts = (props) => {
         </tr>
       </thead>
       <tbody>
-              {props.post.map((post) => {
+              {props.post.map((post, index) => {
         return (
-            <tr>
+            <tr key={index}>
             <Post post={post} />
             </tr>
         );

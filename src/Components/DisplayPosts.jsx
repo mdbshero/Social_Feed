@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Post from "./Post";
 
 const DisplayPosts = (props) => {
@@ -15,7 +15,9 @@ const DisplayPosts = (props) => {
         </tr>
       </thead>
       <tbody>
-        <Post parentPosts={posts} />
+        <tr>
+          <Post parentPosts={posts} />
+        </tr>
       </tbody>
     </table>
   );

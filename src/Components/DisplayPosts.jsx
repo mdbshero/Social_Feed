@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import Post from "./Post";
 
 const DisplayPosts = (props) => {
-  const [posts, setPosts] = useState([
-    { name: "Matthew Bshero", comment: "Test post 1" },
-    { name: "Matthew Bshero", comment: "Test post 2" },
-  ]);
 
   return (
     <table>
@@ -15,9 +11,14 @@ const DisplayPosts = (props) => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <Post parentPosts={posts} />
-        </tr>
+              {props.post.map((post) => {
+        return (
+            <tr>
+            <Post post={post} />
+            </tr>
+        );
+      })
+    }
       </tbody>
     </table>
   );

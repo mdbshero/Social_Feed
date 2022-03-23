@@ -3,9 +3,9 @@ const Post = (props) => {
     <div>
       {props.parentPosts.map((post) => {
         return (
-            <div>
-          <h3>{post.name}</h3>
-          <p>{post.comment}</p>
+          <div>
+            <h3>{post.name}</h3>
+            <p>{post.comment}</p>
           </div>
         );
       })}

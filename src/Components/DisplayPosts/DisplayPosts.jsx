@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Post from "./Post";
+import Post from "../PostFolder/Post";
 
 const DisplayPosts = (props) => {
 
   return (
-    <table>
-      <thead>
+    <table className='table'>
+      <thead className='thread-dark'>
         <tr>
           <th>Social Feed</th>
         </tr>

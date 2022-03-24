@@ -2,7 +2,7 @@
 const NavBar = (props) => {
     return ( 
         <header>
-            <h1>Bshero Social Network</h1>
+            <h1>Bshero<small className="text-muted">Social</small></h1>
         </header>
      );
 }

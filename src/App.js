@@ -6,8 +6,8 @@ import "./App.css";
 
 function App() {
   const [posts, setPosts] = useState([
-    { name: "Matthew Bshero", comment: "Test post 1" },
-    { name: "Matthew Bshero", comment: "Test post 2" },
+    { name: "Matthew Bshero", comment: "HELLO?" },
+    { name: "Matthew Bshero", comment: "Am I the only one on here?" },
   ]);
 
   function addNewPost(post) {
@@ -16,8 +16,8 @@ function App() {
   }
 
   return (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container-fluid gradient-custom">
+      <div className="row ">
         <div className="col-md-6 mx-auto">
           <div className="border-nav">
             <NavBar />
@@ -36,6 +36,9 @@ function App() {
           </div>
         </div>
       </main>
+      <footer>
+        
+      </footer>
     </div>
   );
 }

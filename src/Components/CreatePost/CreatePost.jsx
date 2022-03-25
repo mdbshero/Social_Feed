@@ -27,7 +27,7 @@ function handleSubmit(event) {
             <label className='form-name'>Post:</label>
             <textarea type='text' className='form-control' value={comment} onChange={(event) => setComment(event.target.value)} />
             </div>
-            <button type='submit' className="btn btn-primary button-style" >Submit</button>
+            <button type='submit' className="btn btn-outline-dark button-style" >Submit</button>
         </form>
      );
 }

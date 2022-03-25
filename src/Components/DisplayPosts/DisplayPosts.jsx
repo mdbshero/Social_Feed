@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Post from "../PostFolder/Post";
+import './DisplayPosts.css'
 
 
 const DisplayPosts = (props) => {

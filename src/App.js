@@ -16,8 +16,8 @@ function App() {
   }
 
   return (
-    <div className="container-fluid gradient-custom">
-      <div className="row ">
+    <div className="container gradient-custom">
+      <div className="row">
         <div className="col-md-6 mx-auto">
           <div className="border-nav">
             <NavBar />
@@ -37,7 +37,13 @@ function App() {
         </div>
       </main>
       <footer>
-        
+        <div className="row">
+          <div className="col-md-6 mx-auto">
+            <div className="border-footer">
+              <h6>Copyright BsheroCorp</h6>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

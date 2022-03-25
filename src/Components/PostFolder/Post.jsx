@@ -41,7 +41,7 @@ function dislikef(){
       <div>
         <h3 className="col">{props.post.name}</h3>
         <p className="col">{props.post.comment}</p>
-        <p><small>{today.toUTCString()}</small></p>
+        <p><small>{today.toDateString()}</small></p>
         <div className='pull-right'>
         <button className={[likeactive ? 'btn btn-outline-success btn-lg': 'btn btn-lg' ].join('')} onClick={likef}>
         <FaThumbsUp />
